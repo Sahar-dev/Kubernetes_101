@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Service B</title>
+</head>
+
+<body>
+    <h1>Items from Service A</h1>
+    <ul>
+        {% for item in data.items %}
+        <li>{{ item }}</li>
+        {% empty %}
+        <li>No items available.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
